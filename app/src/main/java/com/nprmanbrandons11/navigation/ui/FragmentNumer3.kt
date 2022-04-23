@@ -8,17 +8,19 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.nprmanbrandons11.navigation.R
 import com.nprmanbrandons11.navigation.databinding.FragmentNumber2Binding
+import com.nprmanbrandons11.navigation.databinding.FragmentNumer3Binding
 
 
-class FragmentNumber2 : Fragment() {
+class FragmentNumer3 : Fragment() {
 
-    lateinit var binding: FragmentNumber2Binding
+
+    lateinit var binding: FragmentNumer3Binding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentNumber2Binding.inflate(layoutInflater,container,false)
+        binding = FragmentNumer3Binding.inflate(layoutInflater,container,false)
         return binding.root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -27,11 +29,12 @@ class FragmentNumber2 : Fragment() {
     }
 
     private fun listeners(){
-        binding.btnNavigateFragment1.setOnClickListener {
-            findNavController().navigate(R.id.action_fragmentNumber2_to_fragmentNumer3)
+        binding.btnNavigateFragment3.setOnClickListener {
+            findNavController().navigate(R.id.action_fragmentNumer3_to_fragmentNumber1)
         }
         binding.popBackStack.setOnClickListener {
             findNavController().popBackStack()
         }
     }
+
 }

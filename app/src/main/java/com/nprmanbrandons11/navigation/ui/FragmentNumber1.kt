@@ -32,5 +32,11 @@ class FragmentNumber1 : Fragment() {
         binding.btnNavigateFragment2.setOnClickListener {
             findNavController().navigate(R.id.action_fragmentNumber1_to_fragmentNumber2)
         }
+        binding.popBackStack.setOnClickListener {
+            if (!findNavController().popBackStack()) {
+                // Call finish() on your Activity
+                requireActivity().finish()
+            }
+        }
     }
 }

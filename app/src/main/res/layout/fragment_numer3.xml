@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.FragmentNumber2">
+    android:background="@color/black"
+    tools:context=".ui.FragmentNumer3">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fragment 2"
+        android:text="Fragment 3"
         android:textColor="@color/white"
         android:layout_marginTop="15dp"
         android:textSize="32sp"
@@ -19,10 +20,10 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
-        android:id="@+id/btn_navigate_fragment1"
+        android:id="@+id/btn_navigate_fragment3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to Fragment 3"
+        android:text="Go to Fragment 1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,8 +35,10 @@
         android:layout_height="wrap_content"
         android:text="POPBACKSTACK"
         android:layout_marginTop="25dp"
-        app:layout_constraintTop_toBottomOf="@id/btn_navigate_fragment1"
+        app:layout_constraintTop_toBottomOf="@id/btn_navigate_fragment3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,7 +13,12 @@
         <action
             android:id="@+id/action_fragmentNumber1_to_fragmentNumber2"
             app:destination="@id/fragmentNumber2"
-            app:enterAnim="@anim/nav_default_enter_anim"/>
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpTo="@id/fragmentNumber2"
+            app:popUpToInclusive="true"/>
     </fragment>
 
     <fragment
@@ -22,9 +27,29 @@
         android:label="fragment_number2"
         tools:layout="@layout/fragment_number2" >
         <action
-            android:id="@+id/action_fragmentNumber2_to_fragmentNumber1"
+            android:id="@+id/action_fragmentNumber2_to_fragmentNumer3"
+            app:destination="@id/fragmentNumer3"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpTo="@id/fragmentNumer3"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNumer3"
+        android:name="com.nprmanbrandons11.navigation.ui.FragmentNumer3"
+        android:label="fragment_numer3"
+        tools:layout="@layout/fragment_numer3" >
+        <action
+            android:id="@+id/action_fragmentNumer3_to_fragmentNumber1"
             app:destination="@id/fragmentNumber1"
-            app:enterAnim="@anim/nav_default_enter_anim"/>
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpTo="@id/fragmentNumber1"
+            app:popUpToInclusive="true"/>
     </fragment>
 
 </navigation>
