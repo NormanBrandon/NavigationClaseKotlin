@@ -33,7 +33,7 @@ class FragmentNumer3 : Fragment() {
             findNavController().navigate(R.id.action_fragmentNumer3_to_fragmentNumber1)
         }
         binding.popBackStack.setOnClickListener {
-            findNavController().popBackStack()
+            findNavController().popBackStack(R.id.fragmentNumber1,false)
         }
     }
 

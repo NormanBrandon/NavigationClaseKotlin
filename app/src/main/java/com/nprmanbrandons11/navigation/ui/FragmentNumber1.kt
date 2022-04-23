@@ -9,6 +9,9 @@ import androidx.navigation.fragment.findNavController
 import com.nprmanbrandons11.navigation.R
 import com.nprmanbrandons11.navigation.databinding.FragmentNumber1Binding
 
+//https://developer.android.com/guide/navigation/navigation-navigate
+//https://developer.android.com/guide/navigation/navigation-getting-started
+
 
 class FragmentNumber1 : Fragment() {
 
@@ -34,7 +37,6 @@ class FragmentNumber1 : Fragment() {
         }
         binding.popBackStack.setOnClickListener {
             if (!findNavController().popBackStack()) {
-                // Call finish() on your Activity
                 requireActivity().finish()
             }
         }
