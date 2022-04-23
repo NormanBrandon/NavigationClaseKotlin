@@ -1,0 +1,34 @@
+package com.nprmanbrandons11.navigation.ui
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import com.nprmanbrandons11.navigation.R
+import com.nprmanbrandons11.navigation.databinding.FragmentNumber2Binding
+
+
+class FragmentNumber2 : Fragment() {
+
+    lateinit var binding: FragmentNumber2Binding
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        binding = FragmentNumber2Binding.inflate(layoutInflater,container,false)
+        return binding.root
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        listeners()
+    }
+
+    private fun listeners(){
+        binding.btnNavigateFragment1.setOnClickListener {
+            findNavController().navigate(R.id.action_fragmentNumber2_to_fragmentNumber1)
+        }
+    }
+}
