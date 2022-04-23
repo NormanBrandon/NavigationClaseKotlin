@@ -12,8 +12,10 @@
         tools:layout="@layout/fragment_number1" >
         <action
             android:id="@+id/action_fragmentNumber1_to_fragmentNumber2"
-            app:destination="@id/fragmentNumber2" />
+            app:destination="@id/fragmentNumber2"
+            app:enterAnim="@anim/nav_default_enter_anim"/>
     </fragment>
+
     <fragment
         android:id="@+id/fragmentNumber2"
         android:name="com.nprmanbrandons11.navigation.ui.FragmentNumber2"
@@ -21,6 +23,8 @@
         tools:layout="@layout/fragment_number2" >
         <action
             android:id="@+id/action_fragmentNumber2_to_fragmentNumber1"
-            app:destination="@id/fragmentNumber1" />
+            app:destination="@id/fragmentNumber1"
+            app:enterAnim="@anim/nav_default_enter_anim"/>
     </fragment>
+
 </navigation>
